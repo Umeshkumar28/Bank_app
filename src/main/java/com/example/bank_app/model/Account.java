@@ -14,6 +14,15 @@ public class Account {
     private String branch;
     private String accountNumber;
 
+    public Account() { }
+
+    public Account(Long id,String currency, String bank, String branch) {
+        this.id = id;
+        this.currency = currency;
+        this.bank = bank;
+        this.branch = branch;
+    }
+
     public String getCurrency() {
         return currency;
     }
